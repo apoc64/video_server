@@ -1,9 +1,16 @@
 <!DOCTYPE html>
+<html>
 <head>
   <title>Video Server</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
   <h1>I'm gonna serve video</h1>
-  <video src="/video/wanda_movie.mp4" muted autoplay controls></video>
+  <video src="/video/wanda_movie.mp4" autoplay muted controls>
+    <track src="/tracks/wanda_movie.vtt" default label="English" >
+    <track src="/tracks/wanda_movie_es.vtt" label="Spanish" >
+    <track src="/tracks/wanda_movie_fr.vtt" label="French" >
+  </video>
 </body>
+</html>
